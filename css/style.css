@@ -3,10 +3,50 @@
 }
 
 body {
+  background-color: #EDEDF6;
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: #30333C;
+  color: #fff;
+}
+
+header h1 {
+  background-color: #91CCCD;
+  color: black;
+  padding: 2.5px 2.5px 2.5px 50px;
+}
+
+.hero-banner {
+  background-image: url("../images/02-hero-bg.jpg");
+  object-fit:contain;
+  height: 200px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  color: #91CCCD;
+  min-width: 300px;
+}
+
+nav ul a {
+  color: #91CCCD;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -21,3 +61,109 @@ h6 {
 p {
   margin: 0;
 }
+
+/* .heading {
+  background-color: rgba(0,0,0,0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #FF6200;
+} */
+
+#page-wrapper-grid {
+  /* display: grid;
+  grid-template-columns: 200px 500px;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: 
+  "aboutHeading aboutDetail"
+  "workHeading workDetail"
+  "contactHeading contactDetail"; */
+}
+
+.page-wrapper {
+  display: flex;
+  width: 70%;
+  margin: 0px auto;
+}
+
+.page-section {
+  margin: 20px 10px 10px 10px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 
+  "title detail";
+}
+
+.title {
+  grid-area: title;
+  width: 200px;
+}
+
+.detail {
+  grid-area: detail;
+}
+
+/* #aboutHeading {
+  grid-area: aboutHeading;
+  
+} */
+
+/* #aboutDetail {
+  grid-area: aboutDetail;
+  
+} */
+
+.detail h5 {
+  display: inline;
+}
+
+.workGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+#workDetail {
+  display: grid;
+  grid-template-rows:300px 120px 120px;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+  "topRow topRow"
+  "centerRowLeft centerRowRight"
+  "bottomRowLeft bottomRowRight"
+}
+
+#topRowWork{
+  grid-area: topRow;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#centerRowLeftWork{
+  grid-area: centerRowLeft;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#centerRowRightWork{
+  grid-area: centerRowRight;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#bottomRowLeftWork{
+  grid-area: bottomRowLeft;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+
+#bottomRowRightWork{
+  grid-area: bottomRowRight;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+
+
