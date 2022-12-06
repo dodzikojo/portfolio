@@ -32,7 +32,7 @@ header {
   grid-area: navLinks;
 }
 
-header h1 {
+header h2 {
   background-color: #91CCCD;
   color: black;
   padding: 2.5px 10px 2.5px 50px;
@@ -120,13 +120,13 @@ p {
 
 .title {
   color: #4d607d;
-  font-size: 50px;
+  font-size: 30px;
   grid-area: title;
   word-wrap: break-word;
   text-align: right;
   justify-content: right;
   padding: 7px;
-  border-right: 6px solid #4d607d;
+  border-right: 4px solid #4d607d;
 }
 
 a {
@@ -162,6 +162,7 @@ a {
 
 .about-text {
   clear: right;
+  font-size: 15px;
 }
 
 .detail h5 {
@@ -239,9 +240,13 @@ a {
 .projectLink {
   margin: 0px;
   padding: 0px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   color: #31333c;
+}
+
+.additionalInfo {
+  font-size: 12px;
 }
 
 
