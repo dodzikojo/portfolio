@@ -14,7 +14,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1%;
+  padding: 10px 10px 10px 0px;
   background-color: #30333C;
   color: #fff;
 }
@@ -22,13 +22,23 @@ header {
 header h1 {
   background-color: #91CCCD;
   color: black;
-  padding: 2.5px 2.5px 2.5px 50px;
+  padding: 2.5px 10px 2.5px 50px;
+}
+
+.hero-banner div h2 {
+  background-color: #91CCCD;
+  color: black;
+  padding: 5px 10px;
+  margin: 15px;
+  position: a;
+  float: right;
+  /* right: -50px; */
 }
 
 .hero-banner {
   background-image: url("../images/02-hero-bg.jpg");
-  object-fit:contain;
-  height: 200px;
+  object-fit:fill;
+  height: 250px;
 }
 
 nav ul {
@@ -62,14 +72,7 @@ p {
   margin: 0;
 }
 
-/* .heading {
-  background-color: rgba(0,0,0,0.7);
-  padding: 15px;
-  height: 25px;
-  color: white;
-  font-size: 18px;
-  border-bottom: 5px solid #FF6200;
-} */
+
 
 #page-wrapper-grid {
   /* display: grid;
@@ -81,28 +84,62 @@ p {
   "contactHeading contactDetail"; */
 }
 
-.page-wrapper {
+
+#contactDetail{
   display: flex;
+  justify-content: space-between;
+}
+
+#contactDetail a {
+ 
+    text-decoration: none;
+    padding: 2px 10px 2px 10px;
+    margin: 5px;
+    border-bottom: 4px solid #91CCCD;
+    color: #4d607d;
+  
+}
+
+.page-wrapper, .hero-banner div {
+  /* display: flex; */
   width: 70%;
   margin: 0px auto;
 }
 
+
+
 .page-section {
   margin: 20px 10px 10px 10px;
   display: grid;
+  column-gap: 20px;
   grid-template-rows: 1fr;
-  grid-template-columns: 20% 80%;
-  grid-template-areas: 
-  "title detail";
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "title detail";
 }
 
 .title {
+  color: #4d607d;
+  font-size: 50px;
   grid-area: title;
-  width: 200px;
+  word-wrap: break-word;
+  text-align: right;
+  justify-content: right;
+  padding: 7px;
+  border-right: 6px solid #4d607d;
+}
+
+a {
+  text-decoration: none;
+  padding: 2px 10px 2px 10px;
+  margin: 5px;
+  border-bottom: 4px solid #91CCCD;
 }
 
 .detail {
   grid-area: detail;
+  color: #4d607d;
+  
 }
 
 /* #aboutHeading {
@@ -115,8 +152,23 @@ p {
   
 } */
 
+#profile-image {
+  object-fit: contain;
+  display: inline;
+  width: 150px;
+  float: left;
+  margin: 0px 10px 0px 0px;
+}
+
+.about-text {
+  clear: right;
+}
+
 .detail h5 {
   display: inline;
+  font-size: 20px;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .workGridArea {
@@ -127,6 +179,23 @@ p {
   cursor: pointer;
   display: grid;
   align-content: end;
+  border: 5px solid #91CCCD;
+}
+
+.heading {
+  background-color:#91CCCD;
+  padding: 5px;
+  color: #31333c;
+  /* font-size: 18px; */
+  display: inline;
+  float: left;
+  margin-right: auto;
+  margin-bottom: 12px;
+}
+
+#contactDetail {
+  position: relative; top:50%;
+  /* transform: translateY(-50%); */
 }
 
 #workDetail {
@@ -138,6 +207,8 @@ p {
   "centerRowLeft centerRowRight"
   "bottomRowLeft bottomRowRight"
 }
+
+
 
 #topRowWork{
   grid-area: topRow;
@@ -162,7 +233,7 @@ p {
 
 #bottomRowRightWork{
   grid-area: bottomRowRight;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/02-run-buddy.jpg");
 }
 
 
